@@ -16,21 +16,25 @@ export default{
 
 <template>
  
- <div class="container">
-     <nav>
-         <div>
-             <img src="/img/dc-logo.png" alt="">
-         </div>
-         <div>
-             <ul class="links">
-                 <li v-for="currentLink in navLinks">
-                     <a href="">{{currentLink}}</a>
-                 </li>
-             </ul>
-         </div>
  
+     <nav>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <img src="/img/dc-logo.png" alt="">
+                </div>
+                <div>
+                    <ul class="links">
+                        <li v-for="currentLink in navLinks">
+                            <a href="">{{currentLink}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+ 
+        </div>
      </nav>
- </div>
 
 </template>
 
@@ -39,9 +43,10 @@ export default{
 
 .container{
     @include container;
+
 }
 
-nav{
+nav .row{
     display:flex;
     justify-content: space-between;
     align-items: center;
