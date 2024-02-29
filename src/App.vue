@@ -3,12 +3,14 @@
 import AppHeader from './components/AppHeader.vue';
 import AppContent from './components/AppContent.vue';
 import AppNavInfo from './components/AppNavInfo.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default{
   components: {
     AppHeader,
     AppContent,
     AppNavInfo,
+    AppFooter,
 
   },
   data(){
@@ -28,6 +30,8 @@ export default{
   <AppContent></AppContent>
 
   <AppNavInfo></AppNavInfo>
+
+  <AppFooter></AppFooter>
 
 
  
