@@ -11,6 +11,7 @@ export default{
 
     }
   },
+  
 }
 </script>
 
@@ -40,6 +41,7 @@ export default{
 
 <style lang="scss">
 @use '../style/mixins' as *;
+@use '../style/_variables' as *;
 
 .container{
     @include container;
@@ -61,14 +63,24 @@ nav .row{
     
     li{
         padding:12px 16px; 
+        height: 100%;
+
+        
 
         a{
             text-decoration: none;
             color:#4b535a;
+            font-weight: 500;
+
+            &:hover{
+                color:$primaryColor;
+                
+            }
         }
     }
 
 }
+
 
 
 
