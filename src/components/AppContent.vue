@@ -105,6 +105,10 @@ export default{
     </div>
 
     <div class="container">
+
+      <div class="banner">
+        CURRENT SERIES
+      </div>
     
       <div class="row">
         
@@ -120,18 +124,39 @@ export default{
 
 <style lang="scss">
 @use '../style/mixins' as *;
+@use '../style/_variables' as *;
 
 
 
 .sec-jumbotron{
     
     background-color: black;
+
+
+    .container{
+      position: relative;
+      padding: 54px 0 20px;
+    }
 }
 
 #jumbotron-img{
   height: 400px;
 
   overflow: hidden;
+}
+
+.banner{
+  position: absolute;
+  left:50px;
+  top:-34px;
+
+  padding:18px 32px;
+
+  background-color: $primaryColor;
+
+  color:white;
+  font-weight: bold;
+  font-size:22px;
 }
 
 .row{
