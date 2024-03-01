@@ -1,7 +1,14 @@
 <script>
 
+import AppComicsItem from './AppComicsItem.vue';
+
 export default{
   name:"AppContent",
+
+
+  components:{
+    AppComicsItem,
+  },
 
   data(){
     return{
@@ -99,8 +106,10 @@ export default{
 
     <div class="container">
     
-      <div class="content">
+      <div class="row">
         
+        <AppComicsItem v-for="currentComic in comics" :img-card-url="currentComic.thumb" :comics-title="currentComic.series"></AppComicsItem>
+
       </div>
 
     </div>
@@ -113,11 +122,6 @@ export default{
 @use '../style/mixins' as *;
 
 
-.content{
-    font-size: 20px;
-    color:white;
-    font-weight: bold;
-}
 
 .sec-jumbotron{
     
@@ -128,6 +132,13 @@ export default{
   height: 400px;
 
   overflow: hidden;
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap:28px
 }
 
 

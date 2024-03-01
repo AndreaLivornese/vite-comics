@@ -35,4 +35,28 @@ export default{
 @use '../style/mixins' as *;
 
 
+.card{
+    width: calc(185px);
+
+
+    .card-img{
+        max-width: 185px;
+        height: 185px;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        img{
+            width:100%;
+        }
+    }
+
+    .comics-title{
+        text-align: center;
+        font-size:14px;
+        text-transform: uppercase;
+        color:white;
+        font-weight: bold;
+    }
+}
+
 </style>
