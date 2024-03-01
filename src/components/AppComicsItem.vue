@@ -3,6 +3,12 @@
 export default{
   name:"AppComicsItem",
 
+  props: {
+
+    imgCardUrl: String,
+    comicsTitle: String,
+  },
+
   data(){
     return{
        
@@ -16,10 +22,10 @@ export default{
  
     <div class="card">
         <div class="card-img">
-            
+            <img :src="imgCardUrl" alt="immagine del fumetto">
         </div>
         <div class="comics-title">
-
+            {{ comicsTitle }}
         </div>
     </div>
 
