@@ -116,6 +116,10 @@ export default{
 
       </div>
 
+      <div class="centered">
+        <button class="btn">LOAD MORE</button>
+      </div>
+
     </div>
 
 </section>
@@ -136,6 +140,32 @@ export default{
     .container{
       position: relative;
       padding: 54px 0 20px;
+    }
+
+    .centered{
+      text-align: center;
+    }
+    
+    .btn{
+      padding:12px 60px;
+
+      border:none;
+
+      background-color: $primaryColor;
+      color:white;
+      font-size: 14px;
+      font-weight: bold;
+
+      cursor:pointer;
+    }
+    
+    .row{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap:28px;
+    
+      margin-bottom: 50px;
     }
 }
 
@@ -159,12 +189,6 @@ export default{
   font-size:22px;
 }
 
-.row{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap:28px
-}
 
 
 </style>

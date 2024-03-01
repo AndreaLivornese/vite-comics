@@ -51,7 +51,6 @@ export default{
     }
 
     .comics-title{
-        text-align: center;
         font-size:14px;
         text-transform: uppercase;
         color:white;
